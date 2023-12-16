@@ -1,0 +1,395 @@
+body {
+    background-color: grey;
+    font-size: 16pt;
+    padding: 8px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    border: 1 px dashed rgb(0, 0, 0);
+    background-color: #000000;
+    color: #00FFFF;
+    height: 70px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container li {
+    flex-grow: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    background-color: #01257D;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+li {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ed4700;
+}
+
+ol {
+    color: white;
+}
+
+li span {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #00FFFF;
+    border: 1px solid #000000;
+    min-height: 32px;
+    height: 75px;
+}
+
+nav li {
+    float: left;
+    margin-right: 20px;
+    max-width: 250px;
+
+}
+
+nav a {
+    display: block;
+    color: white;
+    line-height: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.head-name {
+    width: 1400px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: blanchedalmond;
+}
+
+.style-2 {
+    color: #00FFFF;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.style-3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-indent: 1.5em;
+    letter-spacing: normal;
+    word-spacing: 1px;
+    line-height: 125%;
+    color: white;
+}
+
+label {
+    font-size: 18px;
+    color: white;
+
+}
+
+.gender-label {
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.block01 {
+    width: 1400px;
+    height: 980px;
+    margin: 0 auto;
+}
+
+.img0 {
+    width: 4%;
+    margin-left: 20px;
+}
+
+.img-1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.img-2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 150px;
+}
+
+.block{
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.block-border {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-width: thin;
+    height: 70px;
+    border-style: solid;
+    border-color: darkslategrey;
+}
+
+.block-border_1 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-width: medium;
+    height: 90px;
+    border-style: dashed;
+    border-color: darkslategrey;
+}
+
+.footer-block {
+    width: 1400px;
+    color: white;
+}
+
+.little-block {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.little-footer {
+    width: 500px;
+    text-transform: none;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 48%;
+    background-color: rgb(72, 66, 62); 
+    padding: 10px;
+}
+
+.right {
+    width: 48%;
+    background-color: rgb(72, 66, 62); 
+    padding: 10px; 
+}
+
+
+.leftimg {
+    float:left;
+    margin: 5px;
+    width: 165px;
+    }
+.rightimg {
+    float: right;
+    margin: 5px; 
+    width: 180px;
+}
+
+
+.container2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left2 {
+    width: 50%;
+    background-color: darkslategrey; 
+}
+
+.right2 {
+    width: 50%;
+    background-color: darkslategrey; 
+}
+
+
+input[type=text] {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type=tel], input[type=url], input[type=email], input[type=password] {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type=number] {
+    width: 15%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type=date] {
+    width: 35%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+select {
+    width: 50%;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.entrance {
+    padding:50px 0;
+    background-blend-mode:overlay;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+    
+.entrance form {
+      max-width:500px;
+      padding:50px 70px;
+      border-radius:10px;
+      box-shadow:4px 4px 15px rgb(255, 255, 255);
+      background-color: darkslategrey;
+}
+    
+.entrance .item {
+      width: 100%;
+      border-radius:10px;
+      margin-bottom:25px;
+      padding:10px 20px;
+}
+  
+button[type=submit] {
+      background-color: black;
+      width: 50%;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      margin: 4px 2px;
+      font-size: 20px; 
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 60px;
+}
+
+button {
+    background-color: #ed4700;
+    width: 20%;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 270px;
+}
+
+
+.container3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left3 {
+    width: 30%;
+    background-color: darkslategrey; 
+}
+
+.right3 {
+    width: 70%;
+    background-color: darkslategrey; 
+}
+
+.image-stack__item--bottom {
+    grid-row: 1;
+    grid-column: 1 / span 9;
+    padding-top: 120%; 
+    z-index: 1;
+}  
+
+.image-stack__item--top {
+    grid-column: 2 / -1; 
+    grid-row: 1; 
+    margin-top: -80px;
+    width: 100%;
+}
+
+input[type=text1] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 10;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+textarea {
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.container01 {
+    padding: 100px 50px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+  
+.image-stack {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+    margin-right: 45px;
+}
