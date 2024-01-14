@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #000;
+}
+
+body {
+    color: white; 
+    background-color: #D4A59A; 
+}
+
+header {
+    display: flex;
+    height: 100px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: #5C2018;
+}
+
+header h2 {
+    text-align: center;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 600px; 
+    justify-content: center;
+    align-items: center;
+    background-color: #F3E0DC; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Ідентифікатор, бо використовую лише 1 раз */
+#start-button {
+    background-color: #BC4639;
+    color: white;
+    border: 2px solid black;
+    font-size: large;
+    box-shadow: 0 0 50px black;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+#reg-button {
+    background-color: #BC4639;
+    color: white;
+    border: 2px solid black;
+    font-size: large;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+
+#continue-button {
+    background-color: #BC4639;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#reg-form h2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text-input-config {
+    font-size: 18px; 
+    width: 100%; 
+    height: 40px; 
+    padding: 10px; 
+    border: 2px solid black; 
+}
+
+input {
+    font-size: 20px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 18px; 
+    height: 18px; 
+}
+
+#test {
+    width: 100%;
+    height: 100%;
+}
+
+.newFlexClass {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+} 
+
+
+#Quest6_form {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 390px;
+    width: 400px;
+}
+
+.Quest6_vidpovidnist {
+    width: 400px;
+    height: 90px;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+[class*="Quest6__boxs"] {
+    width: 120px;
+    height: 162.5px;
+    border: 2px solid;
+    position: relative;
+}
+
+.Quest6_vsi_vidpovidi {
+    width: 400px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+}
+
+.Quest6_vidpovid {
+    border: 2px solid;
+    width: 120px;
+    height: 140px;
+    position: relative;
+}
+
+.Quest10_var_vidpovidi label {
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Quest10_var_vidpovidi label input {
+    position: relative;
+    left: 180px;
+    top: 20px;
+}
+
+#resultTest {
+    position: relative;
+    bottom: 300px;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 0 20px; 
+}
+
+#resultTest h1 {
+    font-size: 30px;
+}
+
+#resultTest p {
+    font-size: 22px;
+}
+

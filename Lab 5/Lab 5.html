@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТР-25 Кудрявцев Єгор Олегович 10 Варіант</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    </style>
+</head>
+
+
+
+<body>
+
+    <!-- Заголовок ПІБ та тема роботи -->
+    <header>
+        <h2>
+            ТР-25 Кудрявцев Єгор Олегович<br>
+            Варіант 10. Основи JS. Цикли, умовні вирази, функції користувачів
+        </h2>
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+            <!-- Кнопка початку-->
+            <button id="start-button" onclick="start()">
+                <h2>Розпочнемо тест</h2>
+            </button>
+
+
+            <!-- Форма реєстрації -->
+            <div id="registration" hidden>
+                <!--Перевірка на введення даних-->
+                <form id="reg-form" onsubmit="return false;">  
+                    <h2>Необхідно заповнити:</h2>
+
+                    <div id="text-input">
+                        <p><input id="input1" class="text-input-config" type="text" required placeholder="ПІБ" name="PIB"></p>
+                        <p><input id="input2" class="text-input-config" type="text" required placeholder="Номер групи" name="Group"></p>
+                    </div>
+
+                    <button id="reg-button" onclick="blank()">
+                        <p>Зареєструватися</p>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Безпосередньо початок тестування -->
+            <div id="test" hidden>
+
+                <!-- Для позначення відповідей питань виокористовую запис 
+                    двох циф (1 - номер питання, 2 - номер відповіді питання) -->
+                <!-- 1 Питання-->
+                <div id="Quest1" hidden>
+                    <h1>1 Питання</h1>
+                    <form id="Quest1_form">
+                        <label >
+                            <h3>Яке з цих середовищ розробки найкраще підходить для програмування мовою Python?</h3>
+                        </label>
+                        <div class="Quest_var_vidpovidi">
+                            <label for="pick1"><input type="radio" name="pick" id="pick11"> Webstorm</label>
+                            <label for="pick2"><input type="radio" name="pick" id="pick12"> Pycharm</label>
+                            <label for="pick3"><input type="radio" name="pick" id="pick13"> Word</label>
+                            <label for="pick4"><input type="radio" name="pick" id="pick14"> Ubuntu</label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 2 Питання -->
+                <div id="Quest2" hidden>
+                    <h1>2 Питання</h1>
+                    <form  id="Quest2_form">
+                        <label >
+                            <h3>У яких із даних середовищ розробки можна працювати з C#?</h3>
+                        </label>
+                        <div class="Quest2_vidpovidi_checkbox">
+                            <label><input type="checkbox" id="pick21">Pycharm</label>
+                            <label><input type="checkbox" id="pick22">Resharper</label>
+                            <label><input type="checkbox" id="pick23">Visual Studio</label>
+                            <label><input type="checkbox" id="pick24">PowerPoint</label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 3 Питання-->
+                <div id="Quest3" hidden>
+                    <h1>3 Питання</h1>
+                    <form id="Quest3_form">
+                        <label >
+                            <h3>Які з дих середовищ дозволяють працювати з фото</h3>
+                        </label>
+                        <div class="Quest3_5_vidpovidi_checkbox">
+                            <label><input type="checkbox" id="pick31">Adobe Photoshop</label>
+                            <label><input type="checkbox" id="pick32">Adobe Lightroom</label>
+                            <label><input type="checkbox" id="pick33">Adobe Flash Player</label>
+                            <label><input type="checkbox" id="pick34">Adobe Illustrator</label>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- 4 Питання-->
+                <div id="Quest4" hidden>
+                    <h1>4 Питання</h1>
+                    <form id="Quest4_form">
+                    <div class="Quest4_vidpovidi_select">
+                        <label>
+                            Для створення презентацій шкільна програма навчання передбачає використання застосунку
+                            <select id="select1">
+                                <option value="pick41" id="pick41">PowerPoint</option>
+                                <option value="pick42" id="pick42">Word</option>
+                                <option value="pick43" id="pick43">Pycharm</option>
+                            </select>
+                        </label>
+                    </div>
+                    </form>
+                </div>
+
+                <!-- 5 Питання-->
+                <div id="Quest5" hidden>
+                    <h1>5 Питання</h1>
+                    <form id="Quest5_form">
+                        <label>
+                            <h3>Якою комбінацією клавіщ можна закоментувати виділений код у Pycharm?</h3>
+                        </label>
+                        <div class="Quest3_5_vidpovidi_checkbox">
+                            <label><input type="checkbox" id="pick51">Ctrl + F</label>
+                            <label><input type="checkbox" id="pick52">Ctrl + /</label>
+                            <label><input type="checkbox" id="pick53">Ctrl + C</label>
+                        </div>
+                    </form>
+                </div>
+                
+
+                <!-- 6 Питання-->
+                <div id="Quest6" hidden>
+                    <h1>6 Питання</h1>
+                    <form id="Quest6_form">
+                        <div class="fixedElements">
+                            <label>
+                                <h3>Розташуйте застосунок відповідно до його функціоналу</h3>
+                            </label>
+                        </div>
+                        <div class="Quest6_vidpovidnist" id="dropContainers">
+                            <div class="Quest6__boxs1" id="Container1" ondrop="drop(event)" ondragover="allowDrop(event)">Webstorm
+                                <hr id="hr1">
+                            </div>
+                            <div class="Quest6__boxs2" id="Container2" ondrop="drop(event)" ondragover="allowDrop(event)">Pycharm
+                            </div>
+                            <div class="Quest6__boxs3" id="Container3" ondrop="drop(event)" ondragover="allowDrop(event)">Visual Studio
+                                <hr id="hr3">
+                            </div>
+                        </div>
+                        <div class="Quest6_vsi_vidpovidi">
+                            <div class="Quest6_vidpovid" id="drag1" draggable="true" ondragstart="drag(event)">Написання html коду, створення сайтів</div>
+                            <div class="Quest6_vidpovid" id="drag2" draggable="true" ondragstart="drag(event)">Розробка коду мовою Python</div>
+                            <div class="Quest6_vidpovid" id="drag3" draggable="true" ondragstart="drag(event)">Широкий функціонал кодування, можна працювати з C, C++/#, Python...</div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- 7 Питання-->
+                <div id="Quest7" hidden>
+                    <h1>7 Питання</h1>
+                    <form  id="Quest7_form">
+                        <label>
+                            <h3>Якою клавішою (комбінацією клавіш) можна відкрити html код сторінки сайту?</h3>
+                        </label>
+                        <div class="Quest_var_vidpovidi">
+                            <label for="pick1"><input type="radio" name="pick" id="pick71">F4</label>
+                            <label for="pick2"><input type="radio" name="pick" id="pick72">F12</label>
+                            <label for="pick3"><input type="radio" name="pick" id="pick73">F5</label>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- 8 Питання-->
+                <div id="Quest8" hidden>
+                    <h1>8 Питання</h1>
+                    <form  id="Quest8_form">
+                        <label>
+                            <h3>Яка з цих програм найкраще підходить для створення вебсайтів?</h3>
+                        </label>
+                        <div class="Quest_var_vidpovidi">
+                            <label for="pick1"><input type="radio" name="pick" id="pick81">Webstorm</label>
+                            <label for="pick2"><input type="radio" name="pick" id="pick82">Word</label>
+                            <label for="pick3"><input type="radio" name="pick" id="pick83">Adobe Acrobat Reader</label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 9 Питання-->
+                <div id="Quest9" hidden>
+                    <h1>9 Питання</h1>
+                    <form  id="Quest9_form">
+                        <label>
+                            <h3>Що з поданого можна використовувати в Pycharm?</h3>
+                        </label>
+                        <div class="Quest9_vidpovidi_checkbox">
+                            <label><input type="checkbox" id="pick91">Редакція фото</label>
+                            <label><input type="checkbox" id="pick92">створення відео</label>
+                            <label><input type="checkbox" id="pick93">Написання коду</label>
+                            <label><input type="checkbox" id="pick94">Створення парсерів сайту</label>
+                            <label><input type="checkbox" id="pick95">Читання даних із файлу</label>
+                            <label><input type="checkbox" id="pick96">Запис даних до таблиць</label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 10 Питання-->
+                <div id="Quest10" hidden>
+                    <h1>10 Питання</h1>
+                    <form id="Quest10_form">
+                        <label>
+                            <h3>Де з поданого можна зручно створювати вебсайти?</h3>
+                        </label>
+                        <div class="Quest10_var_vidpovidi">
+                            <label for="pick1"><input type="radio" name="pick" id="pick101">
+                                Wix
+                            </label>
+                            <label for="pick2"><input type="radio" name="pick" id="pick102">
+                                Adobe Flash Player
+                            </label>
+                            <label for="pick3"><input type="radio" name="pick" id="pick103">
+                                Adobe Premiere Pro
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- Кнопка наступного питання-->
+               <button id="continue-button" onclick="nextQuestion()">
+                <p>Підтвердити відповідь</p>
+                </button>
+
+            </div>
+
+            <!-- Результати проходження тесту-->
+            <section>
+                <div id="resultTest" hidden>
+                    <h1>Результат</h1>
+                    <p id="PIBuchnya">Учень: </p>
+                    <p id="resGroup">Група: </p>
+                    <p id="resRating">Оцінка: </p>
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script5.js"></script>
+
+</body>
+</html>
